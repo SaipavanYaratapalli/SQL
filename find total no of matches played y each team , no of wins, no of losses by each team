@@ -1,0 +1,10 @@
+create table matches(
+	team_1 varchar(20),
+	team_2 varchar(20),
+	winner varchar(20));								
+Insert into matches(team_1,team_2,winner)
+values('India','SL','India'),
+('SL','AUS','AUS'),
+('SA','ENG','ENG'),
+('ENG','NZ','NZ'),
+('AUS','India','India');
