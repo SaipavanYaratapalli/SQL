@@ -1,7 +1,8 @@
-# problem Statement
+### problem Statement
 find total no of matches played y each team , no of wins, no of losses by each team
 
-## Schema setup
+### Schema setup
+```SQL
 create table matches(
 	team_1 varchar(20),
 	team_2 varchar(20),
@@ -12,6 +13,7 @@ values('India','SL','India'),
 ('SA','ENG','ENG'),
 ('ENG','NZ','NZ'),
 ('AUS','India','India');
+```
 
 ### Solution Query
 select team_1, count(1) as matches_playes,sum(win_team) as matches_won, matches_playes - matches_won as matches_lost from (
